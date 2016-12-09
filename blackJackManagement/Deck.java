@@ -13,6 +13,10 @@ public class Deck {
     return cards;
   }
 
+  public void shuffleDeck() {
+    Collections.shuffle(cards);
+  }
+
   private void fillDeck() {
     for (SuitType suit : SuitType.values()) {
       for (ValueType value : ValueType.values()) {
@@ -21,5 +25,6 @@ public class Deck {
         cards.add(new Card(value, suit, num));
       }
     }
+    shuffleDeck();
   }
 }
