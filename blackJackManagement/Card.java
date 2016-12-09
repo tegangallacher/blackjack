@@ -4,10 +4,12 @@ public class Card {
 
   private ValueType value;
   private SuitType suit;
+  private int num;
 
-  public Card(ValueType value, SuitType suit) {
+  public Card(ValueType value, SuitType suit, int num) {
   this.value = value;
   this.suit = suit;
+  this.num = num;
 }
 
   public ValueType getValue() {
@@ -16,5 +18,9 @@ public class Card {
 
   public SuitType getSuit() {
   return this.suit;
+}
+
+public int getNum() {
+  return this.num;
 }
 }

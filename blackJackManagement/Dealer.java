@@ -10,8 +10,9 @@ public class Dealer {
   }
 
 public void dealCard(){
-  
+
 }
 
   
 }
+

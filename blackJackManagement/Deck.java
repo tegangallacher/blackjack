@@ -2,10 +2,24 @@ package blackJackManagement;
 import java.util.*;
 
 public class Deck {
-  private ArrayList<Card> packOfCards;
+  private ArrayList<Card> cards;
 
-public Deck(){
- this.packOfCards = new ArrayList<Card>();
-}
+  public Deck(ArrayList<Card> cards) {
+    this.cards = cards;
+    fillDeck();
+  }
 
+  public ArrayList getCards() {
+    return cards;
+  }
+
+  private void fillDeck() {
+    for (SuitType suit : SuitType.values()) {
+      for (ValueType value : ValueType.values()) {
+        int num = value.ordinal() + 1;
+        if (num > 10) num = 10;
+        cards.add(new Card(value, suit, num));
+      }
+    }
+  }
 }
