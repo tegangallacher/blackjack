@@ -11,7 +11,7 @@ public Hand() {
   
 }
 
-public ArrayList getCardsInPLayerHand(){
+public ArrayList getCardsInPlayerHand(){
     return this.playerHand;
   }
 

@@ -8,16 +8,24 @@ public class PlayerTest {
 
   Player player;
   Hand hand;
+  Card card;
   
   @Before 
   public void before() {
-    player = new Player("Winnie", hand);
     hand = new Hand();
+    player = new Player("Winnie", hand);
+    card = new Card(ValueType.EIGHT, SuitType.HEARTS);
   }
 
   @Test
   public void hasName() {
     assertEquals("Winnie", player.getName());
+  }
+
+  @Test
+  public void hasCard() {
+    hand.addDealtCardToHand(card);
+    assertEquals(1, player.handSize());
   }
 
 

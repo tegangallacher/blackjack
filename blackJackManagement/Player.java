@@ -14,5 +14,9 @@ public class Player {
     return this.name;
   }
 
+  public int handSize(){
+    return hand.getCardsInPlayerHand().size();
+  }
+
 
 }
