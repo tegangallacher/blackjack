@@ -23,4 +23,12 @@ public class DeckTest {
   public void printOutDeck() {
     deck.printDeck();
   }
+
+  @Test
+  public void deckCanShuffle() {
+    System.out.println("SPACE BETWEEN FIRST PRINT OUT TEST");
+    deck.shuffleDeck();
+    deck.printDeck();
+  }
+
 }
