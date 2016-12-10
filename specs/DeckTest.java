@@ -31,4 +31,10 @@ public class DeckTest {
     deck.printDeck();
   }
 
+  @Test
+  public void deckRemovesCardFromPackWhenDealing() {
+    deck.deal();
+    assertEquals(51, deck.sizeOfDeck());
+  }
+
 }
