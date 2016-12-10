@@ -12,7 +12,7 @@ public class HandTest {
   @Before
   public void before(){
     hand = new Hand();
-    card1 = new Card (ValueType.FOUR, SuitType.DIAMONDS);
+    card1 = new Card (ValueType.JACK, SuitType.DIAMONDS);
     card2 = new Card (ValueType.EIGHT, SuitType.HEARTS);
     player = new Player ("Tegan", hand);
   }
@@ -20,7 +20,7 @@ public class HandTest {
   public void getValueOfPlayerHand() {
     hand.addDealtCardToHand(card1);
     hand.addDealtCardToHand(card2);
-    assertEquals(12, hand.valueOfPlayerHand());
+    assertEquals(18, hand.valueOfPlayerHand());
   }
 
 
