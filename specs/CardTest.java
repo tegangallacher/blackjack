@@ -10,7 +10,7 @@ public class CardTest {
   
   @Before 
   public void before() {
-    card = new Card(ValueType.THREE, SuitType.CLUBS, 3);
+    card = new Card(ValueType.THREE, SuitType.CLUBS);
   }
 
   @Test

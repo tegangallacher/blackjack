@@ -2,29 +2,36 @@ package blackJackManagement;
 import java.util.*;
 
 public class Deck {
-  private ArrayList<Card> cards;
+  private ArrayList<Card> packOfCards;
 
-  public Deck(ArrayList<Card> cards) {
-    this.cards = cards;
-    fillDeck();
-  }
-
-  public ArrayList getCards() {
-    return cards;
+  public Deck() {
+    this.packOfCards = new ArrayList<Card>();
   }
 
   public void shuffleDeck() {
-    Collections.shuffle(cards);
+    Collections.shuffle(packOfCards);
   }
 
-  private void fillDeck() {
-    for (SuitType suit : SuitType.values()) {
-      for (ValueType value : ValueType.values()) {
-        int num = value.ordinal() + 1;
-        if (num > 10) num = 10;
-        cards.add(new Card(value, suit, num));
+  public int sizeOfDeck(){
+    return packOfCards.size();
+  }
+
+  public void createDeck(){
+    for (SuitType suit : SuitType.values()){
+      for (ValueType value : ValueType.values()){
+        packOfCards.add(new Card(value, suit));
       }
     }
-    shuffleDeck();
+  }
+
+  public void printDeck() {
+    for (Card card : packOfCards){
+      System.out.println(card.getValue() + " (" +card.getValueInteger() + ") of " + card.getSuit());
+    }
+  }
+
+  public void deal(){
+    Card dealtCard = packOfCards.remove(0);
+
   }
 }

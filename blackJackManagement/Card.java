@@ -4,12 +4,11 @@ public class Card {
 
   private ValueType value;
   private SuitType suit;
-  private int num;
 
-  public Card(ValueType value, SuitType suit, int num) {
+  public Card(ValueType value, SuitType suit) {
   this.value = value;
   this.suit = suit;
-  this.num = num;
+
 }
 
   public ValueType getValue() {
@@ -20,7 +19,15 @@ public class Card {
   return this.suit;
 }
 
-public int getNum() {
-  return this.num;
-}
+public int getValueInteger(){
+    if 
+      (value.ordinal() <= 9){
+    return value.ordinal()+1;
+  }
+  else{
+      return 10;
+  }
+  }
+
+
 }
