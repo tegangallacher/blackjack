@@ -11,7 +11,7 @@ public class PlayerTest {
   
   @Before 
   public void before() {
-    player = new Player("Winnie");
+    player = new Player("Winnie", hand);
     hand = new Hand();
   }
 
