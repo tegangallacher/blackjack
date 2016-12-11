@@ -1,14 +1,13 @@
 package blackJackManagement;
+import java.util.*;
 
-// import static org.junit.Assert.*;
-// import org.junit.*;
+public class Runner {
 
-// class Runner{
-//   public static void main(String[] args){
-
-//     Deck deck = new Deck();
-//     deck.fillDeck();
+  public static void main(String[] args) {
     
-//     System.out.println(deck);
-//   }
-// }
+    Game game = new Game();
+
+    game.play();
+
+}
+}
