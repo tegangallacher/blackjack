@@ -19,10 +19,15 @@ public class Game {
   }
 
   public void dealCards() {
+   // System.out.println("You've been dealt:");
     player.hand.addDealtCardToHand(deck.deal());
+ //  System.out.println(player.printCard());
     dealer.hand.addDealtCardToHand(deck.deal());
+   // System.out.println(this.value + " of " + this.suit);
     player.hand.addDealtCardToHand(deck.deal());
+  //  System.out.println(this.value + " of " + this.suit);
     dealer.hand.addDealtCardToHand(deck.deal());
+  //  System.out.println(this.value + " of " + this.suit);
   }
 
   public void gameStatus() {

@@ -5,11 +5,11 @@ public class Runner {
 
   public static void main(String[] args) {
 
-    System.out.println("Lets play Blackjack! Enter your name:");
-    String name = System.console().readLine();
+    System.out.println("Lets play Blackjack!");
 
-    Player player = new Player(name, new Hand());
-    Dealer dealer = new Dealer();
+
+    Player player = new Player("Tegan", new Hand());
+    Dealer dealer = new Dealer(new Hand());
     Deck deck = new Deck();
     Game game = new Game(player, dealer, deck);
 

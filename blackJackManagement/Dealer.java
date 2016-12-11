@@ -6,8 +6,9 @@ public class Dealer{
   private Deck deck;
   public Hand hand;
 
-  public Dealer(){
+  public Dealer(Hand hand){
     this.deck = deck;
     this.hand = hand;
   }
+  
 }
