@@ -21,7 +21,7 @@ public class Game {
   public void dealCards() {
    // System.out.println("You've been dealt:");
     player.hand.addDealtCardToHand(deck.deal());
- //  System.out.println(player.printCard());
+ //System.out.println(deck.printDealtCard(card));
     dealer.hand.addDealtCardToHand(deck.deal());
    // System.out.println(this.value + " of " + this.suit);
     player.hand.addDealtCardToHand(deck.deal());

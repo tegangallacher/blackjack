@@ -34,6 +34,11 @@ public class Deck {
     Card dealtCard = packOfCards.remove(0);
       return dealtCard;
   }
+
+  public void printDealtCard(Card dealtCard) {
+    System.out.println("Card dealt is " + dealtCard.getValueInteger() + " of " + dealtCard.getSuit());
+  }
+
   public ArrayList getDeck(){
     return this.packOfCards;
   }
