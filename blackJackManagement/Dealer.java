@@ -4,7 +4,7 @@ import java.util.*;
 public class Dealer{
 
   private Deck deck;
-  private Hand hand;
+  public Hand hand;
 
   public Dealer(){
     this.deck = deck;
