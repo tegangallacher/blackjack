@@ -1,18 +1,13 @@
 package blackJackManagement;
 import java.util.*;
 
-public class Dealer {
+public class Dealer{
 
   private Deck deck;
+  private Hand hand;
 
-  public Dealer() {
+  public Dealer(){
     this.deck = deck;
+    this.hand = hand;
   }
-
-public void dealCard(){
-
 }
-
-  
-}
-
