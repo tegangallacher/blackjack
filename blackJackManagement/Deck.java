@@ -30,8 +30,11 @@ public class Deck {
     }
   }
 
-  public void deal(){
+  public Card deal(){
     Card dealtCard = packOfCards.remove(0);
-
+      return dealtCard;
+  }
+  public ArrayList getDeck(){
+    return this.packOfCards;
   }
 }

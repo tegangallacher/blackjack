@@ -6,27 +6,30 @@ public class Card {
   private SuitType suit;
 
   public Card(ValueType value, SuitType suit) {
-  this.value = value;
-  this.suit = suit;
+    this.value = value;
+    this.suit = suit;
 
-}
+  }
 
   public ValueType getValue() {
-  return this.value;
-}
+    return this.value;
+  }
 
   public SuitType getSuit() {
-  return this.suit;
-}
+    return this.suit;
+  }
 
-public int getValueInteger(){
-    if 
-      (value.ordinal() <= 9){
-    return value.ordinal()+1;
-  }
-  else{
+  public int getValueInteger(){
+    if (value.ordinal() <= 9) {
+      return value.ordinal() + 1;
+    }
+    else {
       return 10;
+    }
   }
+  
+  public void printCard() {
+    System.out.println(this.value + " of " + this.suit);
   }
 
 
